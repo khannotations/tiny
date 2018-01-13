@@ -1,0 +1,27 @@
+{
+  "name": "Record",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "count": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "habit": {
+      "type": "belongsTo",
+      "model": "Habit",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
